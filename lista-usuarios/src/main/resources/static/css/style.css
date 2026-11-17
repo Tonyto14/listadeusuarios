@@ -1,0 +1,32 @@
+:root { --bg:#f5f6fa; --card:#fff; --text:#1f2430; --muted:#6b7280; --primary:#4f46e5; --danger:#dc2626; --border:#e5e7eb; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--text); }
+header { background:var(--primary); padding:14px 24px; }
+header .brand { color:#fff; text-decoration:none; font-weight:700; font-size:1.1rem; }
+main { max-width:900px; margin:24px auto; padding:24px; background:var(--card); border-radius:10px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+h1 { margin:0 0 16px; font-size:1.5rem; }
+h1 small { color:var(--muted); font-weight:400; }
+.toolbar { display:flex; justify-content:space-between; align-items:center; }
+table { width:100%; border-collapse:collapse; }
+th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--border); }
+th { color:var(--muted); font-size:.8rem; text-transform:uppercase; }
+.actions { display:flex; gap:6px; flex-wrap:wrap; }
+.actions form { margin:0; }
+.btn { display:inline-block; padding:7px 14px; border:1px solid var(--border); border-radius:6px; background:#fff; color:var(--text); text-decoration:none; font-size:.9rem; cursor:pointer; }
+.btn:hover { background:#f3f4f6; }
+.btn-primary { background:var(--primary); border-color:var(--primary); color:#fff; }
+.btn-primary:hover { background:#4338ca; }
+.btn-danger { color:var(--danger); border-color:var(--danger); }
+.btn-danger:hover { background:#fef2f2; }
+.alert { padding:10px 14px; border-radius:6px; margin-bottom:16px; }
+.alert-success { background:#ecfdf5; color:#047857; }
+.alert-error { background:#fef2f2; color:var(--danger); }
+.empty { color:var(--muted); }
+.form .field { margin-bottom:16px; display:flex; flex-direction:column; gap:4px; }
+.form label { font-weight:600; font-size:.9rem; }
+.form input { padding:9px 10px; border:1px solid var(--border); border-radius:6px; font-size:1rem; }
+.error { color:var(--danger); font-size:.85rem; }
+.form-actions { display:flex; gap:8px; margin-top:8px; }
+.details { display:grid; grid-template-columns:120px 1fr; gap:8px 12px; }
+.details dt { color:var(--muted); font-weight:600; }
+.details dd { margin:0; }
